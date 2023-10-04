@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEET</title>
+    <link rel="stylesheet" href="STYLES.CSS">
+    
+    
+</head>
+    <a href="{% url "index_page" %}">Home page</a>
+    <a href="{% url "about_page" %}">About Our hub</a>
+    <a href="{% url "service_page" %}">Our services</a>
+
+
+
+<body>
+   
+    
+    </ul>
+    
+    <div id="vike">
+        <h2>WELCOME TO SABILAS CAR HIRE HUB</h2>
+    <header>
+        <div id="pages">
+           
+        </div>
+        
+    <h1>SABILAS CAR HIRE WELCOMES YOU</h1>
+    <h2>CAR</h2>
+
+        <form action="dashboard.html" method="post">
+      <div id="menu-div">
+          <p><input type="car_id" name="car_id" id="input1" placeholder="car_id" onkeyup="checkinput"></p>
+          <p><input type="plate_number" name="plate_number" id="input2" placeholder="plate_number" onkeyup="checkinput"></p>
+          <p><input type="make" name="make" id="input3" placeholder="make" onkeyup="checkinput"></p>
+          <p><input type="model" name="model"  id="input4"  placeholder="model" onkeyup="checkinput"></p>
+          <p><input type="capacity" name="capacity"  id="input5"  placeholder="capacity" onkeyup="checkinput"></p>
+          <p><input type="transmission" name="transmission"  id="input6"  placeholder="transmission" onkeyup="checkinput"></p>
+          <p><input type="price" name="price"   id="input7" placeholder="price" onkeyup="checkinput"></p>
+          <p><input type="driver_id" name="driver_id"  id="input8"  placeholder="driver_id" onkeyup="checkinput"></p>
+
+           
+        
+          <ul id="save-list">
+          <p><button id="btn-save" onclick="save()">save</button></p> 
+          <p><button id="btn-cancel" onclick="cancel()">cancel</button></p>    
+          </ul>
+            
+        
+           </div>
+          </form>
+
+    <h2>Company cars available</h2>
+    <table>
+        <tr>
+            <th>Car_id</th>
+            <th>Plate_number</th>
+            <th>Make</th>
+            <th>Model</th>
+            <th>Capacity</th>
+            <th>Transmission</th>
+            <th>Price</th>
+            <th>Driver_id</th>
+        </tr>
+        <tr>
+            <td>01</td>
+            <td>UBJ</td>
+            <td>Toyota</td>
+            <td>Hilux</td>
+            <td>4</td>
+            <td>Manual</td>
+            <td>200000</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>02</td>
+            <td>UBE</td>
+            <td>Toyota</td>
+            <td>Zubaru</td>
+            <td>4</td>
+            <td>Automatic</td>
+            <td>150000</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>03</td>
+            <td>UBF</td>
+            <td>Toyota</td>
+            <td>Fielder</td>
+            <td>5</td>
+            <td>Automatic</td>
+            <td>150000</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>04</td>
+            <td>UBL</td>
+            <td>Toyota</td>
+            <td>Rangerover</td>
+            <td>4</td>
+            <td>Manual</td>
+            <td>400000</td>
+            <td>4</td>
+        </tr>
+    </table>
+
+    <h2>DRIVER</h2>
+
+    <form action="dashboard.html" method="post">
+      <div id="menu-div">
+          <p><input type="driver_id" name="driver_id" placeholder="driver_id"></p>
+          <p><input type="name" name="name" placeholder="name"></p>
+          <p><input type="license_number" name="license_number" placeholder="license_number"></p>
+          <p><input type="contact" name="contact" placeholder="contact"></p>
+          <p><input type="address" name="address" placeholder="address"></p>
+
+          <link rel="stylesheet" href="STYLES.CSS">
+          <form action="">
+            <button>Save</button>
+            <button>cancel</button>
+        </form>
+
+        <h2>List of drivers available and there details</h2>
+        <table>
+            <tr>
+                <th>Driver_id</th>
+                <th>Name</th>
+                <th>License_number</th>
+                <th>Contact</th>
+                <th>Address</th>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Aron che</td>
+                <td>023456</td>
+                <td>0775530543</td>
+                <td>Mbale</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Sabila</td>
+                <td>000456</td>
+                <td>0783330543</td>
+                <td>Kampala</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Abdul Hakim</td>
+                <td>011456</td>
+                <td>0702530543</td>
+                <td>Mbale</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Mayamba</td>
+                <td>022456</td>
+                <td>0705530543</td>
+                <td>Jinja</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Jalal</td>
+                <td>020016</td>
+                <td>0751130543</td>
+                <td>Kampala</td>
+            </tr>
+        </table>
+
+          <h2>HIRING</h2>
+
+    <form action="dashboard.html" method="post">
+      <div id="menu-div">
+          <p><input type="hire_id" name="hire_id" placeholder="hire_id"></p>
+          <p><input type="hire_date" name="hire_date" placeholder="hire_date"></p>
+          <p><input type="customer_id" name="customer_id" placeholder="customer_id"></p>
+          <p><input type="car_id" name="car_id" placeholder="car_id"></p>
+          <p><input type="service_type" name="service_type" placeholder="service_type"></p>
+          <p><input type="number_of_days" name="number_of_days" placeholder="number_of_days"></p>
+          <p><input type="amount_to_be_paid" name="amount_to_be_paid" placeholder="amount_to_be_paid"></p>
+
+          <link rel="stylesheet" href="STYLES.CSS">
+          <form action="">
+            <button>Save</button>
+            <button>cancel</button>
+        </form>
+
+        <h2>Already hired</h2>
+        <table>
+            <tr>
+                <th>Hire_id</th>
+                <th>Hire_date</th>
+                <th>Customer_id</th>
+                <th>Car_id</th>
+                <th>Service_type</th>
+                <th>Number_of_days</th>
+                <th>Amount_paid</th>
+            </tr>
+            <tr>
+            <td>01</td>
+            <td>3/August/2023</td>
+            <td>100</td>
+            <td>01</td>
+            <td>Special</td>
+            <td>5 days</td>
+            <td>150000</td>
+            </tr>
+            
+            <tr>
+                <td>04</td>
+                <td>10/August/2023</td>
+                <td>200</td>
+                <td>04</td>
+                <td>Special</td>
+                <td>3 days</td>
+                <td>200000</td>
+                </tr>
+        </table>
+
+
+          <h2>PAYMENT</h2>
+
+         <form action="dashboard.html" method="post">
+            <div id="menu-div">
+                <p><input type="payment_id" name="payment_id" placeholder="payment_id"></p>
+                <p><input type="payment_date" name="payment_date" placeholder="payment_date"></p>
+                <p><input type="hire_id" name="hire_id" placeholder="hire_id"></p>
+                <p><input type="amount_paid" name="amount_paid" placeholder="amount_paid"></p>
+
+                <link rel="stylesheet" href="STYLES.CSS">
+             <form action="">
+                 <button>Save</button>
+                 <button>cancel</button>
+             </form>
+
+             <h2>Registered payements</h2>
+             <table>
+                 <tr>
+                     <th>Payment_id</th>
+                     <th>Payment_date</th>
+                     <th>Hire_id</th>
+                     <th>Amount_paid</th>
+                 </tr>
+                 <tr>
+                     <td>0A</td>
+                     <td>4/August/2023</td>
+                     <td>01</td>
+                     <td>150000</td>
+                 </tr>
+                 <tr>
+                    <td>0B</td>
+                    <td>10/September/2023</td>
+                    <td>04</td>
+                    <td>180000</td>
+                </tr>
+                <tr>
+                    <td>0H</td>
+                    <td>20/August/2023</td>
+                    <td>03</td>
+                    <td>200000</td>
+                </tr>
+             </table>
+              </div>
+          </form>
+        </div>
+    </form>
+
+        </div>
+    </form>
+    </div>
+
+    
+</body>
+</html>
